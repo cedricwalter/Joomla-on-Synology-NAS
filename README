@@ -1,0 +1,13 @@
+Running Joomla CMS on Synology NAS
+
+Tested on Synology DSM 3.2
+
+- Installation
+
+-- From Github source
+zip the whole directoy into a zip file, and rename the zip file to Joomla-1.7.2.spk
+You can now use the package manager to install
+
+-- End users
+You can use the ready to use installation package
+http://www.waltercedric.com/index.php/joomla/1980-running-joomla-on-synology-nas
