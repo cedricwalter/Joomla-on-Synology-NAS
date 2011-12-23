@@ -1,0 +1,11 @@
+[{
+	"step_title": "Introducir contraseña MySQL",
+	"items": [{
+		"type": "password",
+		"desc": "Introduzca la contraseña de MySQL",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Contraseña root"
+		}]
+	}]
+}]

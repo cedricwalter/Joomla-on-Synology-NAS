@@ -1,0 +1,18 @@
+[{
+	"step_title": "Joomla–adatbázis eltávolítása",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Ha eltávolítja a Joomla–adatbázist, akkor az összes blogbejegyzés és hozzászólás törlődik",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Joomla–adatbázis eltávolítása"
+		}]
+	}, {
+		"type": "password",
+		"desc": "A Joomla–adatbázis eltávolításához adja meg a root jelszót",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root jelszó"
+		}]
+	}]
+}]

@@ -1,0 +1,11 @@
+[{
+	"step_title": "Skriv inn MySQL-password",
+	"items": [{
+		"type": "password",
+		"desc": "Skriv inn MySQL-passord",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-password"
+		}]
+	}]
+}]

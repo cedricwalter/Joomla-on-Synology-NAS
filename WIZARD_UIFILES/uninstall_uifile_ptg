@@ -1,0 +1,18 @@
+[{
+	"step_title": "Remover a base de dados Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Se remover a base de dados Joomla todas as publicações e comentários do blog serão removidos",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Remover a base de dados Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Disponibilize a sua palavra-passe de root para remover a base de dados Joomla",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Palavra-passe de Root"
+		}]
+	}]
+}]

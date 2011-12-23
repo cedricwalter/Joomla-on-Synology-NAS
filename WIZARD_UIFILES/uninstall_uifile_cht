@@ -1,0 +1,18 @@
+[{
+	"step_title": "移除 Joomla 資料庫",
+	"items": [{
+		"type": "multiselect",
+		"desc": "如果您移除 Joomla 資料庫，所有的網誌文章及留言都會遭到刪除",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "移除 Joomla 資料庫"
+		}]
+	}, {
+		"type": "password",
+		"desc": "請提供 root 密碼來移除 Joomla 資料庫",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root 密碼"
+		}]
+	}]
+}]

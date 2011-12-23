@@ -1,0 +1,66 @@
+#!/bin/sh
+JoomlaEnabled="/var/packages/Joomla/enabled"
+JoomlaDir="/var/packages/Joomla/target"
+JoomlaDesktop="/usr/syno/synoman/webman/3rdparty/Joomla"
+
+
+CheckEnv() {
+	RunWeb=`/bin/get_key_value /etc/synoinfo.conf runweb`
+	RunMySQL=`/bin/get_key_value /etc/synoinfo.conf runmysql`
+	if [ ! -d /var/services/web -o "x$RunWeb" != "xyes" ]; then
+		echo "Please enable Web Station first." > $SYNOPKG_TEMP_LOGFILE
+		exit 1
+	fi
+	if [ "x$RunMySQL" != "xyes" ]; then
+		echo "Please enable MySQL first." > $SYNOPKG_TEMP_LOGFILE
+		exit 1
+	fi
+}
+
+StartDaemons() {
+	CheckEnv
+	rm -f $JoomlaDesktop
+	ln -sf ${JoomlaDir}/desktop $JoomlaDesktop
+}
+
+StopDaemons() {
+	rm -f $JoomlaDesktop
+}
+
+case "$1" in
+	start)
+		if [ ! -f "${JoomlaEnabled}" ]; then
+			exit 1
+		fi
+	    StartDaemons
+		
+		;;
+	stop)
+		if [ -f "${JoomlaEnabled}" ]; then
+			exit 1
+		fi
+		StopDaemons
+
+		;;
+	restart)
+		StopDaemons
+		sleep 1
+		StartDaemons
+		;;
+	status)
+		if [ -f "${JoomlaEnabled}" ]; then
+			exit 0
+		fi
+		exit 1
+		;;
+	log) 
+		echo ""
+		;;  
+	*)
+		echo "Usage: $0 {start|stop|restart|status}" >&2
+		exit 1
+		;;
+esac
+
+exit 0
+

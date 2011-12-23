@@ -1,0 +1,18 @@
+[{
+	"step_title": "Quitar base de datos de Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Si quita la base de datos de Joomla, se eliminarán todos los comentarios del blog",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Quitar base de datos de Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Proporcione una contraseña root para quitar la base de datos de Joomla",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Contraseña root"
+		}]
+	}]
+}]

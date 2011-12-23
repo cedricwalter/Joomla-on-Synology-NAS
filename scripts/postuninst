@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ "$SYNOPKG_PKG_STATUS" ==  "UPGRADE" -o -f "/tmp/Joomla.upgrade" ]; then
+	exit 0
+fi
+
+rm -rf /usr/syno/synoman/webman/3rdparty/Joomla
+
+ServiceTool="/usr/syno/bin/servicetool"
+ApacheUserScript="/usr/syno/etc/rc.d/S97apache-user.sh"
+if [ -e "$ServiceTool" ]; then
+	$ServiceTool --restart webservice > /dev/null 2>&1
+	if [ "0" != "$?" ]; then
+		$ApacheUserScript restart > /dev/null 2>&1
+	fi
+else
+	$ApacheUserScript restart > /dev/null 2>&1
+fi
+exit 0

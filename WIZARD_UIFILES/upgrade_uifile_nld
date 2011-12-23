@@ -1,0 +1,11 @@
+[{
+	"step_title": "MySQL-wachtwoord invoeren",
+	"items": [{
+		"type": "password",
+		"desc": "Voer uw MySQL-wachtwoord in",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Rootwachtwoord"
+		}]
+	}]
+}]

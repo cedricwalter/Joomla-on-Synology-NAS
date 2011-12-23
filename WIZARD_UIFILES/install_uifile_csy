@@ -1,0 +1,11 @@
+[{
+	"step_title": "Zadejte heslo MySQL",
+	"items": [{
+		"type": "password",
+		"desc": "Zadejte heslo MySQL",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Heslo root"
+		}]
+	}]
+}]

@@ -1,0 +1,18 @@
+[{
+	"step_title": "Remover banco de dados do Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Se você remover o banco de dados do Joomla, todas as postagens e comentários do blog serão excluídos",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Remover banco de dados do Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Forneça a senha root para remover o banco de dados do Joomla",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Senha root"
+		}]
+	}]
+}]

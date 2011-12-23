@@ -1,0 +1,11 @@
+[{
+	"step_title": "Indtast MySQL-adgangskode",
+	"items": [{
+		"type": "password",
+		"desc": "Indtast din MySQL-adgangskode",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-adgangskode"
+		}]
+	}]
+}]

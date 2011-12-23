@@ -1,0 +1,18 @@
+[{
+	"step_title": "Ta bort Joomla-databasen",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Om du tar bort Joomla-databasen, kommer alla bloggposter och kommentarer att raderas",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Ta bort Joomla-databasen"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Ge root-lösenordet för att ta bort Joomla-databasen",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-lösenord"
+		}]
+	}]
+}]

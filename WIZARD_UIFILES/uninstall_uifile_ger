@@ -1,0 +1,18 @@
+[{
+	"step_title": "Joomla-Datenbank entfernen",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Wenn Sie die Joomla-Datenbank entfernen, werden alle Blogeinträge und Kommentare gelöscht",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Joomla-Datenbank entfernen"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Bitte geben Sie das root-Passwort ein, um die Joomla-Datenbank zu entfernen",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-Passwort"
+		}]
+	}]
+}]

@@ -1,0 +1,18 @@
+[{
+	"step_title": "Joomla veritabanını kaldır",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Joomla veritabanını kaldırırsanız, tüm blog postaları ve yorumları silinecek",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Joomla veritabanını kaldır"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Lütfen Joomla veritabanını kaldırmak için root parolasını sağlayın",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root parolası"
+		}]
+	}]
+}]

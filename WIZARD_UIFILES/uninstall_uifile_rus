@@ -1,0 +1,18 @@
+[{
+	"step_title": "Удалите базу данных Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "При удалении базы данных Joomla все сообщения блога и комментарии будут удалены",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Удалите базу данных Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Укажите пароль root для удаления базы данных Joomla",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Пароль root"
+		}]
+	}]
+}]

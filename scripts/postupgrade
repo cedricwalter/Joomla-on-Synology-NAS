@@ -1,0 +1,12 @@
+#!/bin/sh
+
+JoomlaDIR="/var/packages/Joomla/target/joomla-1.7.2"
+JoomlaWEBDIR="/var/services/web/joomla"
+/bin/mv  ${JoomlaWEBDIR}/index.php /tmp/joomla_temp
+/bin/rm -rf ${JoomlaWEBDIR}
+
+/bin/mv ${JoomlaDIR} ${JoomlaWEBDIR}
+/bin/mv /tmp/joomla_temp ${JoomlaWEBDIR}/index.php
+
+rm -f /tmp/Joomla.upgrade
+exit 0

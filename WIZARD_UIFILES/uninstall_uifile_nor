@@ -1,0 +1,18 @@
+[{
+	"step_title": "Fjern Joomla-database",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Dersom du fjerner Joomla-databasen, vil alle bloggpostene og kommentarene slettes",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Fjern Joomla-database"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Vennligst oppgi root-passord for å fjerne Joomla-databasen",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-password"
+		}]
+	}]
+}]

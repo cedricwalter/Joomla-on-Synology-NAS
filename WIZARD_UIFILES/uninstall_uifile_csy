@@ -1,0 +1,18 @@
+[{
+	"step_title": "Odstranit databázi Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Pokud odstraníte databázi Joomla, všechny blogové příspěvky a komentáře budou odstraněny",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Odstranit databázi Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Zadejte heslo k root pro odstranění databáze Joomla",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Heslo root"
+		}]
+	}]
+}]

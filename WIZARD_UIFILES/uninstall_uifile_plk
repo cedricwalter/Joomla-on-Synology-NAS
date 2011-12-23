@@ -1,0 +1,18 @@
+[{
+	"step_title": "Usuń bazę danych Joomla",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Jeśli usuniesz bazę danych Joomla, wszystkie wpisy i komentarze na blogach zostaną usunięte",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Usuń bazę danych Joomla"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Aby usunąć bazę danych Joomla, podaj hasło root",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Hasło root"
+		}]
+	}]
+}]

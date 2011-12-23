@@ -1,0 +1,18 @@
+[{
+	"step_title": "Joomla-database verwijderen",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Als u de Joomla-database verwijdert, zullen alle blogberichten en commentaren worden verwijderd",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Joomla-database verwijderen"
+		}]
+	}, {
+		"type": "password",
+		"desc": "Geef een rootwachtwoord op om de Joomla-database te verwijderen",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Rootwachtwoord"
+		}]
+	}]
+}]

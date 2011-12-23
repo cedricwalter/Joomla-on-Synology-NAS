@@ -1,0 +1,11 @@
+[{
+	"step_title": "Ange MySQL-lösenord",
+	"items": [{
+		"type": "password",
+		"desc": "Ange ditt MySQL-lösenord",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root-lösenord"
+		}]
+	}]
+}]

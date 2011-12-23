@@ -1,0 +1,11 @@
+[{
+	"step_title": "Digite a senha MySQL",
+	"items": [{
+		"type": "password",
+		"desc": "Insira sua senha MySQL",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Senha root"
+		}]
+	}]
+}]

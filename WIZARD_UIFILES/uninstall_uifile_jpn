@@ -1,0 +1,18 @@
+[{
+	"step_title": "Joomla データベースを削除",
+	"items": [{
+		"type": "multiselect",
+		"desc": "Joomla データベースを削除すると、すべてのブログ投稿とコメントが削除されます",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "Joomla データベースを削除"
+		}]
+	}, {
+		"type": "password",
+		"desc": "root パスワードを入力して Joomla データベースを削除してください",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root パスワード"
+		}]
+	}]
+}]

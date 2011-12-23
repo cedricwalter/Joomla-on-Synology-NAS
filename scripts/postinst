@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ "$SYNOPKG_PKG_STATUS" ==  "UPGRADE" -o -f "/tmp/Joomla.upgrade" ]; then
+	exit 0
+fi
+
+JoomlaDIR="/var/packages/Joomla/target/joomla-1.7.2"
+JoomlaWEBDIR="/var/services/web/joomla"
+
+
+/bin/mv ${JoomlaDIR} /var/services/web/joomla
+
+
+
+exit 0

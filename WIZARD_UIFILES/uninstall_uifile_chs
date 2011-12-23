@@ -1,0 +1,18 @@
+[{
+	"step_title": "删除 Joomla 数据库",
+	"items": [{
+		"type": "multiselect",
+		"desc": "如果您删除 Joomla 数据库，所有的博客文章及留言都会遭到删除",
+		"subitems": [{
+			"key": "pkgwizard_remove_mysql",
+			"desc": "删除 Joomla 数据库"
+		}]
+	}, {
+		"type": "password",
+		"desc": "请提供 root 密码来删除 Joomla 数据库",
+		"subitems": [{
+			"key": "pkgwizard_mysql_password",
+			"desc": "Root 密码"
+		}]
+	}]
+}]
